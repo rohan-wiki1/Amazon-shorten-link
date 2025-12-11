@@ -1,127 +1,126 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2d3748; 
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  /* Container styling */
+  font-family: Arial, sans-serif;
+  background-color: #2d3748;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Container styling */
+.container {
+  background-color: #302b63;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Header styling */
+h2 {
+  color: #2d3748;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #00bfae;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Input styling */
+input {
+  width: 50%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #4a5568;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #2d3748;
+}
+
+/* Button styling */
+button {
+  background-color: #4a5568;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 50%;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2d3748;
+}
+
+/* Result text styling */
+#result {
+  margin-top: 20px;
+  color: #00bfae;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+/* Copy Button styling */
+#copyButton {
+  background-color: #00bfae;
+  margin-top: 15px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+}
+
+#copyButton:hover {
+  background-color: #00796b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .container {
-    background-color: #302b63;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
+    width: 90%;
+    padding: 20px;
   }
-  
-  /* Header styling */
+
   h2 {
-    color: #2d3748; 
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #00bfae;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
   }
-  
-  /* Input styling */
-  input {
-    width: 50%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 2px solid #4a5568;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-  
-  input:focus {
-    border-color: #2d3748; 
-  }
-  
-  /* Button styling */
+
+  input,
   button {
-    background-color: #4a5568;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
     width: 50%;
-    transition: background-color 0.3s;
   }
-  
-  button:hover {
-    background-color: #2d3748; 
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
   }
-  
-  /* Result text styling */
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input,
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
   #result {
-    margin-top: 20px;
-    color: #00bfae;
-    font-size: 18px;
-    word-wrap: break-word;
+    font-size: 16px;
   }
-  
-  /* Copy Button styling */
-  #copyButton {
-    background-color: #00bfae;
-    margin-top: 15px;
-    padding: 12px 24px;
-    font-size: 18px;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-    transition: background-color 0.3s;
-  }
-  
-  #copyButton:hover {
-    background-color: #00796b;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .container {
-      width: 90%;
-      padding: 20px;
-    }
-  
-    h2 {
-      font-size: 20px;
-    }
-  
-    input, button {
-      width: 50%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .container {
-      padding: 15px;
-    }
-  
-    h2 {
-      font-size: 18px;
-    }
-  
-    input, button {
-      font-size: 14px;
-      padding: 10px;
-    }
-  
-    #result {
-      font-size: 16px;
-    }
-  }
-  
+}
